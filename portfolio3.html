@@ -53,7 +53,7 @@
 				<!--start: Logo -->
 				<div class="logo span3">
 						
-					<a class="brand" href="#"><img src="img/logos/logo.png" alt="image01" />
+					<a class="brand" href="#">red<span>Box</span></a>
 						
 				</div>
 				<!--end: Logo -->
@@ -72,19 +72,27 @@
 			            		<ul class="nav">
 									<li ><a href="index.html">Home</a></li>
 			              			<li ><a href="about.html">About</a></li>
-									<li class="active"><a href="whatwedo.html">What We Do</a></li> 
-									<li ><a href="projects.html">Our Projects</a></li>
-									<li ><a href="newsfeed.html">News Feed</a></li>
-									<li ><a href="usefullinks.html">Useful Links</a></li>
-<!-- 									<li class="dropdown" class="dropdown">
+									<li class="dropdown">
+			                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<b class="caret"></b></a>
+			                			<ul class="dropdown-menu">
+			                  				<li><a href="social-icons.html">Social Icons</a></li>
+											<li><a href="icons.html">Standard Icons</a></li>
+											<li><a href="icons_set2.html">Font Awesome Icons</a></li>
+											<li><a href="typography.html">Typography</a></li>
+											<li><a href="shortcodes.html">Shortcodes</a></li>
+											<li><a href="list-styles.html">List Styles</a></li>
+			                			</ul>
+			              			</li>
+									<li class="active" class="dropdown">
 			                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
 			                			<ul class="dropdown-menu">
 			                  				<li><a href="portfolio3.html">3 Columns</a></li>
 											<li><a href="portfolio4.html">4 Columns</a></li>
 			                			</ul>
 			              			</li>									
+									<li ><a href="services.html">Services</a></li>
 									<li ><a href="pricing.html">Pricing</a></li>
-									<li ><a href="blog.html">Blog</a></li> -->
+									<li ><a href="blog.html">Blog</a></li>
 			              			<li ><a href="contact.html">Contact</a></li>
 			            		</ul>
 			          		</div>
@@ -110,7 +118,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h2>Our Projects</h2>
+				<h2>Portfolio</h2>
 
 			</div>
 			<!-- end: Container  -->
@@ -122,96 +130,102 @@
 	
 	<!--start: Wrapper-->
 	<div id="wrapper">
+		
+		<!-- start: Container -->	
+		<div class="container">
+
+			<div id="filters">
+				<ul class="option-set" data-option-key="filter">
+					<li><a href="#filter" class="selected" data-option-value="*">All</a></li>
+					<li>/</li>
+					<li><a href="#filter" data-option-value=".nature">Nature</a></li>
+					<li>/</li>
+					<li><a href="#filter" data-option-value=".people">People</a></li>
+					<li>/</li>
+					<li><a href="#filter" data-option-value=".scenery">Scenery</a></li>
+					<li>/</li>
+					<li><a href="#filter" data-option-value=".world">World</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- end: Container  -->
 				
 		<!--start: Container -->
     	<div class="container">
 	
-			<div class="clearfix"></div>
-			<hr class="clean">
-	
-      		<!-- start: Row -->
-      		<div class="row">
-	
-        		<div class="span4">
-          			<div class="icons-box">
-						<i class="ico-iphone ico-color circle-color big"></i>
-						<h3>Academics</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-						</p>
-						<div class="clear"></div>
-					</div>
-        		</div>
+			<!-- start: Portfolio -->
+			<div id="portfolio-wrapper" class="row">
+								
+				<div class="span4 portfolio-item nature people">
+					<div class="picture"><a href="project.html" title="Title"><img src="img/photo1.jpg" alt=""/><div class="image-overlay-link"></div></a>
+						<div class="item-description alt">
+							<h5><a href="project.html">Project no. 1</a></h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+					</div>	
+				</div>
 
-        		<div class="span4">
-          			<div class="icons-box">
-						<i class="ico-imac circle big"></i>
-						<h3>Lumbini Center for Sustainability</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-						</p>
-						<div class="clear"></div>
+				<div class="span4 portfolio-item scenery">
+					<div class="picture">
+						<a href="project.html" title="Title"><img src="img/photo3.jpg" alt=""/><div class="image-overlay-link"></div></a>
+							<div class="item-description alt">
+								<h5><a href="project.html">Project no. 3</a></h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+							</p>
+						</div>
 					</div>
-        		</div>
+				</div>
 
-        		<div class="span4">
-          			<div class="icons-box">
-						<i class="ico-ok ico-white circle-color-full big-color"></i>
-						<h3>Innovation Lab</h3>
-						<p>
+				<div class="span4 portfolio-item world scenery">
+					<div class="picture"><a href="project.html" title="Title"><img src="img/photo5.jpg" alt=""/><div class="image-overlay-link"></div></a>
+						<div class="item-description alt">
+							<h5><a href="project.html">Project no. 5</a></h5>
+							<p>
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-						</p>
-						<div class="clear"></div>
+							</p>
+						</div>
 					</div>
-        		</div>
+				</div>
+
+				<div class="span4 portfolio-item nature scenery">
+					<div class="picture"><a href="project.html" title="Title"><img src="img/photo6.jpg" alt=""/><div class="image-overlay-link"></div></a>
+						<div class="item-description alt">
+							<h5><a href="project.html">Project no. 6</a></h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="span4 portfolio-item world">
+					<div class="picture"><a href="project.html" title="Title"><img src="img/photo4.jpg" alt=""/><div class="image-overlay-link"></div></a>
+						<div class="item-description alt">
+							<h5><a href="project.html">Project no. 4</a></h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+							</p>
+						</div>	
+					</div>
+				</div>
+
+				<div class="span4 portfolio-item world people">
+					<div class="picture"><a href="project.html"><img src="img/photo8.jpg" alt=""/><div class="image-overlay-link"></div></a>
+						<div class="item-description alt">
+							<h5><a href="project.html">Project no. 8</a></h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+							</p>
+						</div>
+					</div>
+				</div>
 
 			</div>
-			<!-- end: Row -->
-	      		
-			<div class="clearfix"></div>
-			<hr class="clean">
-
-	      	<!-- start: Row -->
-	      	<div class="row">
-
-        		<div class="span4">
-          			<div class="icons-box">
-						<i class="ico-embed-close ico-color circle-color big"></i>
-						<h3>Bio Park</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-						</p>
-						<div class="clear"></div>
-					</div>
-        		</div>
-
-        		<div class="span4">
-          			<div class="icons-box">
-						<i class="ico-shopping-cart circle big"></i>
-						<h3>Local Attraction</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-						</p>
-						<div class="clear"></div>
-					</div>
-        		</div>
-
-        		<div class="span4">
-          			<div class="icons-box">
-						<i class="ico-thumbs-up ico-white circle-color-full big-color"></i>
-						<h3>Post Earthquake Recovery</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-						</p>
-						<div class="clear"></div>
-					</div>
-        		</div>
-
-      		</div>
-			<!-- end: Row -->
-			
-			<div class="clearfix"></div>
-			<hr class="clean">
+			<!-- end: Portfolio -->
       	
 		</div>
 		<!--end: Container-->
